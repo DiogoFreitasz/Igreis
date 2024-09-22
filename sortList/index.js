@@ -13,13 +13,14 @@ function BubbleSort(list) {
         }
     }
     let fim = performance.now(); // 1                        // Primitivas -> let inicio = perfomace.now() - atribuição
-    console.log(fim - inicio + "ml") // 1
+    console.log(`Lista ordenada: ${list}`) // 1
+    console.log("Tempo em ms: " + (fim - inicio)) // 1
     console.log("--------------------") // 1
 }
 //----------------------------------
 // Cálculo de Complexidade Grande O
-// 1 + 1 + 1 + 1 + 2n + 1n + n2 + n2 + n2 + n2 + n2 + n2 + 1 + 1 + 1
-// 7 + 3n + 6n2
+// 1 + 1 + 1 + 1 + 1 + 2n + 1n + n2 + n2 + n2 + n2 + n2 + n2 + 1 + 1 + 1
+// 8 + 3n + 6n2
 // O(n2) -> as constantes são desconsideradas, restando apenas o com maior índice
 //----------------------------------
 // Complexidade de Tempo: O(n^2) - Ambos os loops (externo e interno) executam n vezes, resultando em um total de n^2 operações.
